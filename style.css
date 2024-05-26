@@ -1,0 +1,127 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  background-color: #752BA2;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #DCA4FF;
+}
+
+.container{
+  display:flex;
+}
+
+.container>aside>.foto{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:200px;
+  background-color: #752BA2;
+  border-radius: 0 0 50% 50%;
+}
+.container>aside>.foto>img{
+  width:160px;
+  border-radius: 50%;
+}
+
+.container>aside{
+  display:flex;
+  flex-direction: column;
+  gap:16px;
+  background-color: #DCA4FF;
+  color: #351E44;
+  width:200px; 
+}
+
+.container>aside>.info{
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+  padding: 16px;
+}
+
+.container>aside>.info>h5{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container>aside>.info>p{
+  font-size: 12px;
+}
+
+.container>aside>.qr{
+  display:flex;
+  flex-direction: column;
+  gap:16px;
+  justify-content: center;
+  align-items: center;
+}
+.container>aside>.qr>a>img{
+  width:120px;
+}
+
+.container>section>main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:16px;
+  padding: 32px;
+  width: 100%;
+}
+
+.container>section>main>h3{
+  font-weight: 700;
+  font-size: 24px;
+  border-bottom: solid 3px #752BA2;
+}
+
+.container>section>main>article{
+  background-color: #DCA4FF;
+  width: 600px;
+  padding: 12px 20px;
+  border-radius: 16px;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact; /* Safari */
+    print-color-adjust: exact;         /* Firefox */
+  }
+
+  /* Asegúrate de definir los colores de fondo en esta sección */
+  .container>section>main>article {
+    background-color: #DCA4FF; /* Cambia a tu color de fondo deseado */
+  }
+
+  .container>aside{
+    background-color: #DCA4FF;
+    color: #351E44;
+  }
+
+  header{
+    background-color: #752BA2;
+    color: #DCA4FF;
+  }
+
+  .container>aside>.foto{
+    background-color: #752BA2;
+  }
+
+  article{
+    page-break-inside: avoid;
+  }
+}
