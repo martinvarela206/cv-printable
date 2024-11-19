@@ -134,6 +134,13 @@ article{
     color:#041d2e;
   }
 
+  .container>aside{
+    background-color: #89aec7;
+  }
+
+  article{
+    background-color: #89aec7;
+  }
   /* .foto, header {
     background-color: #042236;
   } */
